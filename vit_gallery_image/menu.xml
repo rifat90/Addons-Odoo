@@ -1,0 +1,46 @@
+
+<openerp>
+	<data>
+
+		<record id="action_galery_list" model="ir.actions.act_window">
+			<field name="name">Galery</field>
+			<field name="res_model">vit.galery</field>
+			<field name="view_mode">tree,kanban,form</field>
+			<field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a Galery
+              </p>				
+				<p>Klik tombol create untuk membuat Galery baru</p>
+			</field>
+		</record>
+
+		<record id="action_galery_image_list" model="ir.actions.act_window">
+			<field name="name">Galery Image</field>
+			<field name="res_model">vit.galery_image</field>
+			<field name="view_mode">kanban,form</field>
+			<field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a Image
+              </p>				
+				<p>Klik tombol create untuk membuat Image baru</p>
+			</field>
+		</record>
+
+		<menuitem id="galery_0" name="Galery" sequence="10"/>
+		
+		<menuitem id="galery_1" name="Galery" sequence="10" parent="galery_0"/>
+
+		<menuitem id="galery_1_1"
+		 action="action_galery_list"
+		 name="Galery"
+		 sequence="10"
+		 parent="galery_1"/>
+
+		<menuitem id="galery_1_2"
+		 action="action_galery_image_list"
+		 name="Galery Image"
+		 sequence="20"
+		 parent="galery_1"/>
+
+	</data>
+</openerp>
