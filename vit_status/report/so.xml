@@ -1,0 +1,22 @@
+<openerp>
+	<data>
+		<template id="vit_so_sign" inherit_id="sale.report_salesorder_document">
+			 <xpath expr="//div[@class='oe_structure'] [last()]" position="after">
+			 	<table style="width:100%">
+			 		<tr>
+			 			<td style="width:33%"> Created by </td>
+			 			<td style="width:33%"> Validated by </td>
+			 			<td style="width:33%"> Approved by </td>
+			 		</tr>
+			 		<tr>
+			 			<td style="heigh:200px"><span t-field="o.user_id"/></td>
+			 			<td style="heigh:200px"><............</td>
+			 			<td style="heigh:200px">.............</td>
+			 		</tr>
+			 	</table>
+			 </xpath>
+
+		</template>
+
+	</data>
+</openerp>
